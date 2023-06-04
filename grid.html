@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            grid-area: ONE;
+        }
+        #two{
+            grid-area: TWO;
+        }
+        #three
+        {
+            grid-area: THREE;
+        }
+        #four{
+            grid-area: FOUR;
+        }
+         #five{
+            grid-area: FIVE;
+         }
+         #six{
+            grid-area: SIX;
+         }
+         #seven{
+            grid-area: SEVEN;
+         }
+         #eight{
+            grid-area: EIGHT;
+         }
+         #nine{
+            grid-area: NINE;
+         }
+        #main{
+            background-color: deeppink;
+            border: 2px solid black;
+            grid-template-areas: 'ONE TWO TWO THREE'
+                                  'FOUR FOUR FIVE FIVE'
+                                  'SIX SEVEN SEVEN SEVEN'
+                                   'SIX EIGHT NINE TEN';
+            margin: 10px;
+            row-gap: 5px;
+            column-gap: 5px;
+            padding: 5px;
+            display: grid;
+            width: 300px;
+        }
+       /*  to represent a child tag in div we need to use > synmbol with the id of parent div*/
+        #main>div{
+           background-color: white;
+            border: 2px solid black;
+            font-size: xx-large;
+            text-align: center;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div id="main">
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <div id="four">4</div>
+    <div id="five">5</div>
+    <div id="six">6</div>
+    <div id="seven">7</div>
+    <div id="eight">8</div>
+    <div id="nine">9</div>
+    <div id="ten">10</div>
+    </div>
+
+    
+</body>
+</html>

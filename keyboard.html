@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #esc{
+            grid-area: ESCAPE;
+        }
+        #tilde{
+            grid-area: TILDE;
+        }
+        #one{
+            grid-area: ONE;
+        }
+        #two{
+            grid-area: TWO;
+        }
+        #three{
+            grid-area: THREE;
+        }
+        #four{
+            grid-area: FOUR;
+        }
+        #five{
+            grid-area: FIVE;
+        }
+        #six{
+            grid-area: SIX;
+        }
+        #seven{
+            grid-area: SEVEN;
+        }
+        #eight{
+            grid-area: EIGHT;
+        }
+        #nine{
+            grid-area: NINE;
+        }
+        #zero{
+            grid-area: ZERO;
+        }
+        #minus{
+            grid-area: MINUS;
+        }
+        #plus{
+            grid-area: PLUS;
+        }
+        #cat{
+            grid-area: CAT;
+        }
+        #home{
+            grid-area: HOME;
+        }
+        #pageUP{
+            grid-area: PGUP;
+        }
+        #pageDown{
+            grid-area: PGDOWN;
+        }
+        #main{
+          margin: 10px;
+          margin-top: 3px;
+          background-color: black;
+          border: 2px solid white;
+          width:1000px;
+          height:50px;
+          display: grid;
+          grid-template-areas: 'ESCAPE  TILDE ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE ZERO MINUS PLUS CAT HOME PGUP PGDOWN';
+        }
+        #main>div{
+           background-color: rgb(85, 84, 84);
+           border: 3px solid black;
+           padding: 15px;
+           color: white;
+        }
+
+        #tab{
+            grid-area: TAB;
+        }
+        #queue{
+            grid-area: QUEUE;
+        }
+        #win{
+            grid-area: WIN;
+        }
+        #eat{
+            grid-area: EAT;
+        }
+        #rat{
+            grid-area: RAT;
+        }
+        #tom{
+            grid-area: TOM;
+        }
+        #yolk
+        {
+            grid-area: YOLK;
+        }
+        #uber{
+            grid-area: UBER;
+        }
+        #index{
+            grid-area: INDEX;
+        }
+        #ox{
+            grid-area: OX;
+        }
+        #pox{
+            grid-area: POX;
+        }
+        #sleft{
+            grid-area: SLEFT;
+        }
+        #sright{
+            grid-area: SRIGHT;
+        }
+        #enter{
+            grid-area: ENTER;
+        }
+        #end{
+            grid-area: END;
+        }
+        #pgdn{
+            grid-area: PGDN;
+        }
+        #mvup{
+            grid-area: MVUP;
+        }
+        #main2{
+          margin: 10px;
+          background-color: black;
+          border: 2px solid white;
+          width:1000px;
+          height:50px;
+          display: grid;
+          grid-template-areas: 'TAB TAB TAB QUEUE WIN EAT RAT TOM YOLK UBER INDEX OX POX SLEFT SRIGHT ENTER ENTER ENTER ENTER END PGDN MVUP';
+          position: absolute;
+          bottom: 79.8%;
+        }
+        #main2>div{
+           background-color: rgb(85, 84, 84);
+           border: 3px solid black;
+           padding: 15px;
+           color: white;
+        }
+        #main3{
+            margin-top:60px;
+          background-color: black;
+          border: 2px solid white;
+          width:1000px;
+          height:50px;
+          display: grid;
+          grid-template-areas: 'CAPS CAPS  APPLE SONG DOG FOX GRAPE HAT JAM KITE LAMP SEMICOLON SINGLEQUOTES BSLASH INSERT PAUSE MVDOWN';
+          position: absolute;
+          bottom:72.5%;
+          right:343px;
+        }
+        #main3>div{
+           background-color: rgb(85, 84, 84);
+           border: 3px solid black;
+           padding: 15px;
+           color: white;
+
+        }
+        #caps{
+            grid-area: CAPS;
+        }
+        #apple{
+            grid-area: APPLE;
+        }
+        #song{
+            grid-area: SONG;
+        }
+        #dog{
+            grid-area: DOG;
+        }
+        #fox{
+            grid-area: FOX;
+        }
+        #grape{
+            grid-area: GRAPE;
+        }
+        #hat{
+            grid-area: HAT;
+        }
+        #jam{
+            grid-area: JAM;
+        }
+        #kite{
+            grid-area: KITE;
+        }
+        #lamp{
+            grid-area: LAMP;
+        }
+        #semicolon{
+            grid-area: SEMICOLON;
+        }
+        #singlequotes{
+            grid-area: SINGLEQUOTES;
+        }
+        #bslash{
+            grid-area: BSLASH;
+        }
+        #insert{
+            grid-area: INSERT;
+        }
+        #pause{
+            grid-area: PAUSE;
+        }
+        #mvdn{
+            grid-area: MDOWN;
+        }
+        #main4{
+         margin-top:111px;
+         margin-left:10px;
+          background-color: black;
+          border: 2px solid white;
+          width:1000px;
+          height:50px;
+          display: grid;
+          grid-template-areas: 'SHIFT SHIFT ZEBRA XMAS CAB VAN BALL NUT MAN LESSER GREATER FSLASH UARROW SHIFT1 DEL PRINT SLOCK DOCK';
+        }
+        #main4>div{
+           background-color: rgb(85, 84, 84);
+           border: 3px solid black;
+           padding: 15px;
+           color: white;
+
+        }
+        #shift{
+            grid-area: SHIFT;
+        }
+        #zebra{
+            grid-area: ZEBRA;
+        }
+        #xmas{
+            grid-area: XMAS;
+        }
+        #cab{
+            grid-area: CAB;
+        }
+        #van{
+            grid-area: VAN;
+        }
+        #ball{
+            grid-area: BALL;
+        }
+        #nut{
+            grid-area: NUT;
+        }
+        #man{
+            grid-area: MAN;
+        }
+        #lesser{
+            grid-area: LESSER;
+        }
+        #greater{
+            grid-area: GREATER;
+        }
+        #fslash{
+            grid-area: FSLASH;
+        }
+        #shift1{
+            grid-area: SHIFT1;
+        }
+        #del{
+            grid-area: DEL;
+        }
+        #uarrow{
+            grid-area: UARROW;
+        }
+        #print{
+            grid-area: PRINT;
+        }
+        #slock{
+            grid-area: SLOCK;
+        }
+        #dock{
+            grid-area: DOCK;
+        }
+        #main5{
+          margin-top:111px;
+          margin-left:10px;
+          background-color: black;
+          border: 2px solid white;
+          width:1000px;
+          height:50px;
+          display: grid;
+          grid-template-areas: 'FUNC CONTROL  WINDOWS ALTER SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE  SPACE SPACE SPACE SPACE SPACE  ALTER1 CONTROL1 LARROW DARROW RARROW MENU OPTIONS HELP FADE';
+          position: absolute;
+          bottom: 53.5%;
+        }
+        #main5>div{
+           background-color: rgb(85, 84, 84);
+           border: 3px solid black;
+           padding: 14px;
+           
+           color: white;
+        }
+        #func{
+            grid-area: FUNC;
+        }
+        #control{
+            grid-area: CONTROL;
+        }
+        #windows{
+            grid-area: WINDOWS;
+        }
+        #alter{
+            grid-area: ALTER;
+        }
+        #space{
+            grid-area: SPACE;
+        }
+        #alter1{
+            grid-area: ALTER1;
+        }
+        #control1{
+            grid-area: CONTROL1;
+        }
+        #larrow{
+            grid-area: LARROW;
+        }
+        #darrow{
+            grid-area: DARROW;
+        }
+        #rarrow{
+            grid-area: RARROW;
+        }
+        #menu{
+            grid-area: MENU;
+        }
+        #option{
+            grid-area: OPTIONS;
+        }
+        #help{
+            grid-area: HELP;
+        }
+        #fade{
+            grid-area: FADE;
+        }
+    </style>
+   
+</head>
+<body>
+    <div id="main">
+        <div id="esc">esc</div>
+        <div id="tilde">~</div>
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+        <div id="seven">7</div>
+        <div id="eight">8</div>
+        <div id="nine">9</div>
+        <div id="zero">0</div>
+        <div id="minus">-</div>
+        <div id="plus">+</div>
+        <div id="cat">c</div>
+        <div id="home">Home</div>
+        <div id="pageUp">PgUp</div>
+        <div id="pageDown" style="padding:5%; padding-top: 12px;">PgDown</div>
+     </div>
+     <div id="main2">
+        <div id="tab">Tab</div>
+        <div id="quiz">Q</div>
+        <div id="win">W</div>
+        <div id="eat">E</div>
+        <div id="rat">R</div>
+        <div id="tom">T</div>
+        <div id="yolk">y</div>
+        <div id="uber">U</div>
+        <div id="index">I</div>
+        <div id="ox">O</div>
+        <div id="pox">P</div>
+        <div id="sleft">[</div>
+        <div id="sright">]</div>
+        <div id="enter">Enter</div>
+        <div id="end">End</div>
+        <div id="pgdn">PgDn</div>
+        <div id="mvup">MvUp</div>
+     </div>
+     <div id="main3">
+        <div id="caps">Caps Lock</div>
+        <div id="apple">A</div>
+        <div id="song">S</div>
+        <div id="dog">D</div>
+        <div id="fox">F</div>
+        <div id="grape">G</div>
+        <div id="hat">H</div>
+        <div id="jam">J</div>
+        <div id="kite">K</div>
+        <div id="lamp">L</div>
+        <div id="semicolon">;</div>
+        <div id="singlequotes">'</div>
+        <div id="bslash">\</div>
+        <div id="insert">Ins</div>
+        <div id="pause">pause</div>
+        <div id="mdown">MvDown</div>
+     </div>
+     <div id="main4">
+       <div id="shift">Shift</div>
+       <div id="zebra">Z</div>
+       <div id="xmas">X</div>
+       <div id="cab">C</div>
+       <div id="van">V</div>
+       <div id="ball">B</div>
+       <div id="nut">N</div>
+       <div id="man">M</div>
+       <div id="lesser"><</div>
+       <div id="greater">></div>
+       <div id="fslash">/</div>
+       <div id="shift1">shift</div>
+       <div id="delete">Del</div>
+       <div id="uarrow">
+        <span class="material-symbols-outlined">
+            arrow_upward
+            </span>
+       </div>
+       <div id="print">Prntscn</div>
+       <div id="slock">sclk</div>
+       <div id="dock">Dock</div>
+     </div>
+
+     <div id="main5">
+       <div id="func">Fn</div>
+       <div id="control">Ctrl</div>
+       <div id="windows">
+        <i class="fa-brands fa-windows"></i>
+       </div>
+       <div id="alter">alt</div>
+       <div id="space"></div>
+       <div id="alter1">alt</div>
+       <div id="control1">ctrl</div>
+       <div id="larrow">
+        <span class="material-symbols-outlined">
+            west
+            </span>
+       </div>
+       <div id="darrow">
+        <span class="material-symbols-outlined">
+            arrow_downward
+            </span>
+       </div>
+       <div id="rarrow">
+        <span class="material-symbols-outlined">
+           east
+            </span>
+       </div>
+       <div id="menu">
+        <i class="fa-solid fa-bars"></i>
+       </div>
+       <div id="options">Options</div>
+       <div id="help">Help</div>
+       <div id="fade">Fade</div>
+     </div>
+</body>
+</html>

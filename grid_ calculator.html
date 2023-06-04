@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #twofive{
+            grid-area: TWOFIVE;
+        }
+        #clear{
+            grid-area: CLEAR;
+        }
+        #plus{
+            grid-area: PLUS;
+        }
+        #minus{
+            grid-area: MINUS;
+        }
+        #seven{
+            grid-area: SEVEN;
+        }
+        #eight{
+            grid-area: EIGHT;
+        }
+        #nine{
+            grid-area: NINE;
+        }
+        #slash{
+            grid-area: SLASH;
+        }
+        #four{
+            grid-area: FOUR;
+        }
+        #five{
+            grid-area: FIVE;
+        }
+        #six{
+            grid-area: SIX;
+        }
+        #cross{
+            grid-area: CROSS;
+        }
+        #one{
+            grid-area: ONE;
+        }
+        #two{
+            grid-area: TWO;
+        }
+        #three{
+            grid-area: THREE;
+        }
+        #zero{
+            grid-area: ZERO;
+        }
+        #dot{
+            grid-area: DOT;
+        }
+        #equals{
+            grid-area: EQUALS;
+        }
+        #main{
+            background-color:white;
+            border: 2px solid white;
+            padding: 100px;
+            padding-bottom: 50px;
+            width:250px;
+            height: 400px;
+            margin-left: 400px;
+            margin-top: 100px;
+            display: grid;
+            grid-template-areas: 'TWOFIVE TWOFIVE TWOFIVE TWOFIVE'
+                                 'CLEAR CLEAR PLUS MINUS'
+                                  'SEVEN EIGHT NINE SLASH'
+                                  'FOUR FIVE SIX CROSS'
+                                  'ONE TWO THREE EQUALS'
+                                  'ZERO ZERO DOT EQUALS';
+
+
+                                 
+        }
+        #main>div{
+            background-color: pink;
+            border: 2px solid white;
+            color: orangered;
+            font-size: xx-large;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: gray;">
+    <div id="main">
+        <div id="twofive" style="background-color: orangered;color: white;text-align:center;padding-top: 15px;">25</div>
+        <div id="clear" style="background-color:aqua;color: white;">clear</div>
+        <div id="plus">+</div>
+        <div id="minus">-</div>
+        <div id="seven">7</div>
+        <div id="eight">8</div>
+        <div id="nine">9</div>
+        <div id="slash">/</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+        <div id="cross">X</div>
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="zero">0</div>
+        <div id="dot">.</div>
+        <div id="equals" style="background-color: brown; color: white;padding-top: 25px;">=</div>
+        
+    </div>
+</body>
+</html>

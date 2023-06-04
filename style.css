@@ -1,0 +1,438 @@
+#main{
+    background-color: black;
+    border: 2px solid black;
+    width:1000px;
+    height: 60px;
+    margin: 12px;
+    display: grid;
+    grid-template-areas: 'ESC TILDE ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE ZERO HYPHEN EQUALS CLOSE';
+}
+#main>div{
+    background-color: rgb(107, 103, 103);;
+    border: 2px solid black;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+#escape{
+    grid-area: ESC;
+}
+#tilde{
+    grid-area: TILDE;
+}
+#comma{
+   position: fixed;
+   top:3%;
+}
+
+#one{
+    grid-area: ONE;
+    padding-right: 3%;
+}
+#excl{
+    position: fixed;
+    top: 2%;
+}
+#two{
+    grid-area: TWO;
+}
+#at{
+    position: fixed;
+    top:2%
+}
+#three{
+    grid-area: THREE;
+}
+#ash{
+    position: fixed;
+    top:2%
+}
+#four{
+    grid-area: FOUR;
+}
+#dollar{
+    position: fixed;
+    top: 2%;
+}
+#five{
+    grid-area: FIVE;
+}
+#percent{
+    position: absolute;
+    top:2%
+}
+#six{
+    grid-area: SIX;
+}
+#tarrow{
+    position: absolute;
+    top: 2%;
+}
+#seven{
+    grid-area: SEVEN;
+}
+#ampersand{
+    position: absolute;
+    top:2%
+}
+#eight{
+    grid-area: EIGHT;
+}
+#asterisk{
+    position: absolute;
+    top: 2%;
+}
+#nine{
+    grid-area: NINE;
+}
+#obrack{
+    position: absolute;
+    top: 2%;
+}
+#zero{
+    grid-area: ZERO;
+}
+#cbrack{
+    position: absolute;
+    top: 2%;
+    padding-left: 10px;
+}
+#hyphen{
+    grid-area: HYPHEN;
+}
+#minus{
+    position: absolute;
+    top: 2%;
+}
+#equals{
+    grid-area: EQUALS;
+}
+#plus{
+    position: absolute;
+    top: 2%;
+}
+#close{
+    grid-area: CLOSE;
+}
+
+
+
+#tab{
+    grid-area: TAB;
+}
+#queue{
+    grid-area: QUEUE;
+}
+#win{
+    grid-area: WIN;
+}
+#eat{
+    grid-area: EAR;
+}
+#rat{
+    grid-area: RAT;
+}
+#tom{
+    grid-area: TOM;
+}
+#yolk{
+    grid-area: YOLK;
+}
+#uber{
+    grid-area: UBER;
+}
+#index{
+    grid-area: INDEX;
+}
+#ox{
+    grid-area: OX;
+}
+#pox{
+    grid-area: POX;
+}
+#sleft{
+    grid-area: SLEFT;
+}
+#cleft{
+    position: absolute;
+   top: 90px;
+}
+#sright{
+    grid-area: SRIGHT;
+}
+#cright{
+    position: absolute;
+    top:90px;
+}
+#bslash{
+    grid-area: BSLASH;
+}
+#main2{
+    background-color: black;
+    border: 2px solid black;
+    width:1000px;
+    height: 66px;
+    margin: 10px;
+    display: grid;
+    grid-template-areas: 'TAB TAB QUEUE WIN EAR RAT TOM YOLK UBER INDEX OX POX SLEFT SRIGHT BSLASH';
+    position: absolute;
+    bottom: 82%;
+}
+
+#main2>div{
+    background-color: rgb(107, 103, 103);;
+    border: 2px solid black;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#caps{
+    grid-area: CAPS;
+}
+#apple{
+    grid-area: APPLE;
+}
+#song{
+    grid-area: SONG;
+}
+#dog{
+    grid-area: DOG;
+}
+#fox{
+    grid-area: FOX;
+}
+#grape{
+    grid-area: GRAPE;
+}
+#hat{
+    grid-area: HAT;
+}
+#jam{
+    grid-area: JAM;
+}
+#kite{
+    grid-area: KITE;
+}
+#lamp{
+    grid-area: LAMP;
+}
+#semi{
+    grid-area: SEMI;
+}
+#colon{
+    position: absolute;
+    top:153px;
+}
+#single{
+    grid-area: SINGLE;
+}
+#double{
+    position: absolute;
+    top:156px;
+}
+#enter{
+    grid-area: ENTER;
+}
+#main3{
+    background-color: black;
+    border: 2px solid black;
+    width:1000px;
+    height: 68px;
+    margin: 10px;
+    display: grid;
+    grid-template-areas: 'CAPS APPLE SONG DOG FOX GRAPE HAT JAM KITE LAMP SEMI SINGLE ENTER ENTER';
+    position: absolute;
+    bottom: 74.3%;
+}
+#main3>div{
+    background-color: rgb(107, 103, 103);;
+    border: 2px solid black;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+#shift{
+    grid-area: SHIFT;
+}
+#zebra{
+    grid-area: ZEBRA;
+}
+#xmas{
+    grid-area: XMAS;
+}
+#cab{
+    grid-area: CAB;
+}
+#van{
+    grid-area: VAN;
+}
+#ball{
+    grid-area: BALL;
+}
+#nut{
+    grid-area: NUT;
+}
+#man{
+    grid-area: MAN;
+}
+#lesser{
+    grid-area: LESSER;
+}
+#greater{
+    grid-area: GREATER;
+}
+#fslash{
+    grid-area: FSLASH;
+}
+#uarrow{
+    grid-area: UARROW;
+}
+#shift1{
+    grid-area: SHIFT1;
+}
+#main4{
+    background-color: black;
+    border: 2px solid black;
+    width:1000px;
+    height: 60px;
+    margin: 10px;
+    display: grid;
+    grid-template-areas: 'SHIFT SHIFT ZEBRA XMAS CAB VAN BALL NUT MAN LESSER GREATER FSLASH UARROW SHIFT1 SHIFT1';
+    position: absolute;
+    bottom: 67%;
+}
+#main4>div{
+    background-color: rgb(107, 103, 103);;
+    border: 2px solid black;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+}
+
+#main5{
+    margin-top:125px;
+    margin-left:10px;
+    background-color: black;
+    border: 2px solid white;
+    width:1000px;
+    height:50px;
+    display: grid;
+    grid-template-areas: 'FUNC CONTROL  WINDOWS ALTER SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE SPACE  SPACE SPACE SPACE SPACE SPACE  ALTER1 CONTROL1 LARROW DARROW RARROW MENU';
+    position: absolute;
+    bottom: 62%;
+    border-top: none;
+  }
+  #main5>div{
+     background-color: rgb(107, 103, 103);
+     border: 2px solid black;
+     padding: 13px;
+     font-size: x-large;
+     color: white;
+  }
+  #func{
+      grid-area: FUNC;
+  }
+  #control{
+      grid-area: CONTROL;
+  }
+  #windows{
+      grid-area: WINDOWS;
+  }
+  #alter{
+      grid-area: ALTER;
+  }
+  #space{
+      grid-area: SPACE;
+  }
+  #alter1{
+      grid-area: ALTER1;
+  }
+  #control1{
+      grid-area: CONTROL1;
+  }
+  #larrow{
+      grid-area: LARROW;
+  }
+  #darrow{
+      grid-area: DARROW;
+  }
+  #rarrow{
+      grid-area: RARROW;
+  }
+  #menu{
+      grid-area: MENU;
+  }
+
+  #div2{
+    background-color: black;
+    width:200px;
+    height: 290px;
+    display: grid;
+    grid-template-areas: 'HOME PGUP NAV'
+                          'END PGDN MVUP'
+                          'INSERT PAUSE MVDN'
+                          'PRINT SCROLL DOCK'
+                          'OPTIONS HELP FADE';
+    position: absolute;
+    right: 20px;
+    bottom:56%;
+    top:1.8%;
+    margin-top:-1.5px;
+    margin-right:470px;
+  }
+  #div2>div{
+    background-color: rgb(107, 103, 103);
+    border: 2px solid black;
+    text-align: center;
+    font-size: large;
+    color: white;   
+  }
+  #home{
+    grid-area: HOME;
+  }
+  #pgup{
+    grid-area: PGUP;
+  }
+  #nav{
+    grid-area: NAV;
+  }
+  #end{
+    grid-area: END;
+  }
+  #pgdn{
+    grid-area: PGDN;
+  }
+  #mvup{
+    grid-area: MVUP;
+  }
+  #insert{
+    grid-area: INSERT;
+  }
+  #pause{
+    grid-area: PAUSE;
+  }
+  #mvdn{
+    grid-area: MVDN;
+  }
+  #print{
+    grid-area: PRINT;
+  }
+  #scroll{
+    grid-area: SCROLL;
+  }
+  #dock{
+    grid-area: DOCK;
+  }
+  #options{
+    grid-area: OPTIONS;
+  }
+  #help{
+    grid-area: HELP;
+  }
+  #fade{
+    grid-area: FADE;
+  }
